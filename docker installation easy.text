@@ -1,44 +1,60 @@
-How to Install Docker on Ubuntu
-Step 1: Verify Ubuntu Version
+
+
+# How to Install Docker on Ubuntu
+
+## Step 1: Verify Ubuntu Version
+
 First, ensure you are running the latest version of Ubuntu for a smooth installation. To check your Ubuntu version, run the following command:
 
-bash
-Copy code
+
 lsb_release -a
-Step 2: Update Package Database
+
+
+## Step 2: Update Package Database
+
 Update your package database to ensure you have the latest package information. Run the following command:
 
-bash
-Copy code
+
 sudo apt-get update
+
+
 You will need to enter your Ubuntu password to proceed.
 
-Step 3: Install Docker Engine
+## Step 3: Install Docker Engine
+
 To install the Docker Engine, execute the following command:
 
-bash
-Copy code
+
 sudo apt install docker.io
+
+
 When prompted, type "Y" and press Enter. This command will download and install the Docker package.
 
-Step 4: Enable Docker Service
+## Step 4: Enable Docker Service
+
 After installing Docker, enable the Docker service with the following command:
 
-bash
-Copy code
+
 sudo systemctl enable docker
-Step 5: Verify Docker is Running
+
+
+## Step 5: Verify Docker is Running
+
 Ensure Docker is running by checking its status:
 
-bash
-Copy code
+
 sudo systemctl status docker
+
+
 If everything is set up correctly, you should see that Docker is running.
 
-Step 6: Test Docker Installation
+## Step 6: Test Docker Installation
+
 To test if Docker is installed and working correctly, run the following command:
 
-bash
-Copy code
+
 sudo docker run hello-world
+
+
 If everything is set up correctly, you should see the message "Hello from Docker."
+
